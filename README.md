@@ -22,7 +22,7 @@ This project explores the performance of complex SQL queries on an SQLite databa
 - Fields include:  
   `PersonName`, `SchoolName`, `DepartmentName`, `BirthDate`, `JobTitle`, `Earnings`, `EarningsYear`, etc.
 
-## 🧱 Database Schema Design
+## Database Schema Design
 
 Normalized to **Third Normal Form (3NF)** with the following tables:
 
@@ -34,7 +34,7 @@ Normalized to **Third Normal Form (3NF)** with the following tables:
   - Composite Primary Key: (`PersonID`, `JobID`, `EarningsYear`)  
   - Foreign Keys: references to `Person`, `School`, `Job`
 
-## 🧾 Queries Executed
+## Queries Executed
 
 1. **High Earners Born Before 1975**  
 2. **Non-working individuals earning over $400K**  
@@ -43,7 +43,7 @@ Normalized to **Third Normal Form (3NF)** with the following tables:
 5. **Most recent salary of Madison Harrison**  
 6. **Department with highest average earnings**
 
-## ⏱️ Execution Time Results
+## Execution Time Results
 
 | Dataset Size | q1     | q2     | q3     | q4     | q5     | q6     |
 |--------------|--------|--------|--------|--------|--------|--------|
@@ -54,15 +54,8 @@ Normalized to **Third Normal Form (3NF)** with the following tables:
 ✅ Execution time **increased significantly** with dataset size  
 ✅ Most expensive queries: `q1`, `q6` (due to subqueries and aggregations)
 
-## 📊 Observations
+## Observations
 
 - SQLite performs well on small datasets but **slows down significantly** with size and complexity  
 - Normalized schema improves **data consistency and structure**, but query planning becomes critical  
 - Subqueries and joins have **higher performance cost** with larger data
-
-## 🛠 Tools Used
-
-- SQLite  
-- Python 3.x  
-- `sqlite3`, `pandas`, `time`  
-- Jupyter Notebook

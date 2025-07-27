@@ -1,10 +1,10 @@
 # 🗃️ SQL Query Execution Analysis on Normalized Database
 
-## 📌 Project Overview
+## Project Overview
 
 This project explores the performance of complex SQL queries on an SQLite database using **normalized schema design** and **datasets of increasing sizes (1MB, 10MB, 100MB)**. Query execution times are measured and compared across datasets to evaluate how performance scales with volume and query complexity.
 
-## 🧠 Objective
+## Objective
 
 - Design a relational schema in **3NF** with appropriate foreign key constraints  
 - Execute complex SQL queries involving **joins**, **filters**, **aggregations**, and **subqueries**  
@@ -12,7 +12,7 @@ This project explores the performance of complex SQL queries on an SQLite databa
 - Analyze scalability limitations of **SQLite** as database size increases
 
 
-## 🧪 Dataset Details
+## Dataset Details
 
 - Three CSV files:  
   - `salary_tracker_1MB.csv`  
